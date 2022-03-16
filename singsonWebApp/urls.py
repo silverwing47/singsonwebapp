@@ -8,5 +8,5 @@ urlpatterns = [
     # path('api/data', views.get_data, name='api-data'),
 
     #TEST URL
-    path('index', views.indexView.as_view(), name="index_view"),
+    path('', views.indexView.as_view(), name="index_view"),
 ]
