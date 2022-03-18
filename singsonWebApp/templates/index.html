@@ -1,14 +1,46 @@
+{% load static %}
+{% block headerinclude %}
+  <style>
+    body {
+      margin:0px;
+      font-family:'Roboto';
+      text-align:center;
+      background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    }
+    #container {
+      position: relative;
+      color:black;
+      text-transform: uppercase;
+      font-size:80px;
+      font-weight:bold;
+      padding:80px;
+      margin:auto;
+      width:40%;
+      top:20%;
+      border: 5px solid #E0E0E0;
+      border-radius: 35px;
+      border-style: outset;
+      background: rgba(0, 0, 0, 0.12);
+    }
+    .box{
+      color:#fff;
+      padding:12px;
+      background:#FF2E00;
+    }
+
+  </style>
+{% endblock headerinclude %}
+
+{% block footerinclude %}
+
+{% endblock footerinclude %}
+
+{% block content %}
+<div id="container">
+  Angelerina<br>
+  <div class="box">Singson</div>
+  BSIT - 3
+</div>
 
 
-        {% block headerinclude %}
-
-        {% endblock headerinclude %}
-
-        {% block footerinclude %}
-
-        {% endblock footerinclude %}
-
-        {% block content %}
-          <h1>Singson, Angelerina</h1>
-          <p>BSIT - 3</p>
-        {% endblock content %}
+{% endblock content %}

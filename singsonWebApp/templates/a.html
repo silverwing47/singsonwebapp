@@ -1,0 +1,47 @@
+{% load static %}
+{% block headerinclude %}
+  <style>
+    body {
+      background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    }
+    h1{
+      color:#ffffff;
+      font-size: 50px;
+    }
+    p{
+      color:#ffffff;
+    }
+    .pika{
+      position:relative;
+
+      margin:auto;
+    }
+    .container{
+      position:relative;
+      top:150px;
+      text-align: center;
+      margin:auto;
+      border: 3px solid #ffffff;
+      border-radius: 25px;
+      width: 50%;
+      padding: 50px;
+    }
+    /////////////
+
+  </style>
+{% endblock headerinclude %}
+
+{% block footerinclude %}
+
+{% endblock footerinclude %}
+
+{% block content %}
+<div class="container">
+  <h1>Singson, Angelerina T.</h1>
+  <p>BSIT - 3</p>
+</div>
+
+  <div class="pika">
+    <img src="{% static 'pikachu.png' %}" alt="Landing Page">
+  </div>
+{% endblock content %}
